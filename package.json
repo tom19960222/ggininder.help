@@ -1,0 +1,22 @@
+{
+  "name": "ggininder_help",
+  "version": "1.0.0",
+  "description": "The source code of http://ggininder.help",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom19960222/ggininder.help.git"
+  },
+  "keywords": [
+    "ggininder"
+  ],
+  "author": "Ikaros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tom19960222/ggininder.help/issues"
+  },
+  "homepage": "https://github.com/tom19960222/ggininder.help#readme"
+}
