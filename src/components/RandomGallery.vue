@@ -39,7 +39,7 @@
         var index = Math.floor(Math.random() * this.galleryLinkList.length)
         this.galleryURL = this.galleryLinkList[index].galleryURL
         this.galleryLink = this.galleryLinkList[index].galleryLink
-        this.galleryName = this.galleryLinkList[index].galleryName1
+        this.galleryName = this.galleryLinkList[index].galleryName
       }
     }
   }
