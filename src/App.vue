@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <RandomGallery></RandomGallery>
+    <hello v-show="toggleHelloComponent"></hello>
+    <RandomGallery v-show="toggleRandomGalleryComponent"></RandomGallery>
   </div>
 </template>
 
@@ -13,6 +14,21 @@ export default {
   components: {
     Hello,
     RandomGallery
+  },
+  data () {
+    return {
+      toggleHelloComponent: true,
+      toggleRandomGalleryComponent: false
+    }
+  },
+  methods: {
+    openRandomGalleryScreen () {
+      this.toggleHelloComponent = false
+      this.toggleRandomGalleryComponent = true
+    }
+  },
+  mounted () {
+    this.$on('openRandomGalleryScreen', this.openRandomGalleryScreen)
   }
 }
 </script>

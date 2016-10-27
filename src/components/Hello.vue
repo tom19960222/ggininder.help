@@ -2,7 +2,7 @@
   <div class="hello">
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
-    <button>{{ btnMsg }}</button>
+    <button @click="gotoMainScreen">{{ btnMsg }}</button>
   </div>
 </template>
 
@@ -13,6 +13,12 @@ export default {
     return {
       msg: 'Welcome to GGININDER.HELP',
       btnMsg: 'HELP MY GG'
+    }
+  },
+  methods: {
+    gotoMainScreen () {
+      console.debug('Help my GG!')
+      this.$parent.$emit('openRandomGalleryScreen', null)
     }
   }
 }
